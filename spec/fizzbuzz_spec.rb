@@ -21,3 +21,9 @@ require 'fizzbuzz'
       expect(fizzbuzz(7)).to eq 7
     end
   end
+
+  describe 'fizzbuzz_1to100' do
+    it 'counter counts every iteration and returns 100' do
+    expect(fizzbuzz_1to100).to eq 100
+  end
+end

@@ -4,9 +4,12 @@ end
 
 def fizzbuzz_1to100
 
+  counter = 0
   (1..100).each do |x|
-    puts fizzbuzz_get_result(x)
+    fizzbuzz_get_result(x)
+    counter += 1
   end
+  return counter
 end
 
 def fizzbuzz_get_result(number)
