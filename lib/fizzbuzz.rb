@@ -1,12 +1,21 @@
 def fizzbuzz(number)
-  if number == 3
-    return "fizz"
-  end
-  if number == 5
-    return "buzz"
-  end
+fizzbuzz_get_result(number)
+end
 
- if number == 15
-    return "fizzbuzz"
- end
+def fizzbuzz_1to100
+
+  (1..100).each do |x|
+    puts fizzbuzz_get_result(x)
+  end
+end
+
+def fizzbuzz_get_result(number)
+if number % 3 == 0 && number % 5 == 0
+   return "fizzbuzz"
+elsif number % 3 == 0
+ return "fizz"
+elsif number % 5 == 0
+ return "buzz"
+else return number
+end
 end
